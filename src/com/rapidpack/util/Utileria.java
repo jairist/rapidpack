@@ -189,9 +189,13 @@ public class Utileria {
 		Utileria javaPoiUtils = new Utileria();
 		// javaPoiUtils.readExcelFile(new
 		// File("C:\\Users\\Jairis\\Desktop\\anuncios.xlsx"));
+		String path = System.getProperty("user.dir");
+		
+		// the executable as above mentioned then doing this directly through code
+		
 
 		ArrayList<String[]> arrayDatosExcel = javaPoiUtils
-				.readExcelFileToArray(new File("C:\\Users\\Jairis\\Desktop\\anuncios.xlsx"));
+				.readExcelFileToArray(new File(path +"utility\\anuncios.xlsx"));
 		ArrayList<Publicacion> publicaciones = new ArrayList<>();
 		int r = 1;
 		for (String[] next : arrayDatosExcel) {

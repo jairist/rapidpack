@@ -75,7 +75,7 @@ public class Publicar {
 			sleep(10);
 			driver.findElement(By.id("validate")).click();
 			sleep(3);
-			//driver.findElement(By.id("create")).click();
+			driver.findElement(By.id("create")).click();
 
 		} catch (Exception e) {
 			// TODO: handle exception
